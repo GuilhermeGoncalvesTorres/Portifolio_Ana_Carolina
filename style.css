@@ -259,6 +259,7 @@ form button:hover {
 
 .icones-sociais a:hover {
   color: #ffffff;
+  transform: scale(1.4);
   
 }
 
@@ -268,7 +269,6 @@ form button:hover {
   }
 
   .icones-sociais a:hover {
-    color: #ffffff;
-    transform: scale(1.4);
+    color: #8a5555;
   }
 }
