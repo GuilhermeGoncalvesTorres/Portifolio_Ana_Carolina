@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  header {
+    background-color: #1f1f1f;
+  }
+
+  section,
+  footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .menu a {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+
+  .menu a:hover {
+    background-color: #3a3a3a;
+    border-color: #666;
+  }
+
+  .botao-cv {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+  }
+
+  .botao-cv:hover {
+    background-color: #333;
+    border-color: #555;
+  }
+
+
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ff174d ;
+  color: white;
+  padding: 10px ;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.5);
+}
+
+
+.botao-cv {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 20px;
+  background-color: white;
+  color: #ff174d;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.botao-cv:hover {
+  background-color: #e3f6e3;
+  border-color: #e3f6e3;
+  transform: scale(1.1);
+}
+
+.textos-header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #ff174d;
+  margin-bottom: 10px;
+}
+
+section {
+  background-color: rgb(49, 49, 49);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: #ff174d;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+nav.menu {
+  margin-top: 10px;
+}
+
+nav.menu a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 8px 15px;
+  background-color: white;
+  color: #ff174d;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav.menu a:hover {
+  background-color: #e9f9e9;
+  border-color: #cceccc;
+  transform: scale(1.1);
+}
+
+#contato-form {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contato-form h2 {
+  margin-bottom: 20px;
+  color: #ff174d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff174d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ff174d;
+  transform: scale(1.02);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  #contato-form {
+    background-color: rgb(49, 49, 49);
+  }
+
+  form input,
+  form textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #aaa;
+  }
+
+  form button {
+    background-color: #ff174d;
+  }
+
+  form button:hover {
+    background-color: #ff174d;
+  }
+}
+.icones-sociais {
+  margin-top: 10px;
+}
+
+.icones-sociais a {
+  margin: 0 10px;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icones-sociais a:hover {
+  color: #ffffff;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  .icones-sociais a {
+    color: #ffffff;
+  }
+
+  .icones-sociais a:hover {
+    color: #ffffff;
+    transform: scale(1.4);
+  }
+}
